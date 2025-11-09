@@ -156,8 +156,8 @@ const Dashboard = () => {
               <AvatarFallback>{user?.displayName?.charAt(0)}</AvatarFallback>
             </Avatar>
             <div>
-              <h2 className="text-xl font-bold text-blue-400">{user?.displayName}</h2>
-              <p className="text-sm text-gray-400">UPI ID: {upiId}</p>
+              <h2 className="text-xl font-bold text-blue-400">{"Varsha G"}</h2>
+              <p className="text-sm text-gray-400">UPI ID: {"varsha@ybl"}</p>  
             </div>
           </div>
           <Button

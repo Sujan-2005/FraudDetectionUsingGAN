@@ -1,7 +1,9 @@
 // Import Firebase modules
 import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
-import { getFirestore, doc, getDoc, setDoc } from "firebase/firestore";
+//import { getFirestore, doc, getDoc, setDoc } from "firebase/firestore";
+import { getFirestore, doc, getDoc, setDoc, connectFirestoreEmulator } from "firebase/firestore";
+
 
 console.log("Firebase API Key from env:", import.meta.env.VITE_API_KEY);
 
@@ -33,8 +35,20 @@ const firebaseConfig = {
   appId: import.meta.env.VITE_APP_ID,
 };
 
-// Initialize Firebase
+//Initialize Firebase
+// const app = initializeApp(firebaseConfig);
+
+// export const auth = getAuth(app);
+// export const db = getFirestore(app);
+
+
+
 const app = initializeApp(firebaseConfig);
 
 export const auth = getAuth(app);
 export const db = getFirestore(app);
+
+// 🔹 Connect to Firestore Emulator (localhost)
+if (window.location.hostname === "localhost") {
+  connectFirestoreEmulator(db, "localhost", 8081); // 8081 = emulator port you chose
+}

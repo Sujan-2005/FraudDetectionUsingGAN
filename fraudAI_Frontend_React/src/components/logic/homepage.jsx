@@ -42,8 +42,8 @@ import {
     const generateUPIId = (name) => {
         const randomSuffix = Math.floor(1000 + Math.random() * 9000);
         const baseName = name.split(" ")[0].toLowerCase();
-        
-        return `${baseName}${randomSuffix}@yesbank`;
+        const basename = ["Aarav", "Diya", "Vivaan", "Ananya", "Rohan", "Isha", "Aditya", "Sneha", "Karan", "Meera"];
+        return `${basename[Math.floor(Math.random() * 10)]}${randomSuffix}@yesbank`;
     };
     const data= [
     {

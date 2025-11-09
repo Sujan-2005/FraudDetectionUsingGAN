@@ -90,7 +90,7 @@ const TransactionSimulation = ({ upiId, amount, remarks, senderUPI, onClose }) =
         return (
           <motion.div className="space-y-4" variants={containerVariants} initial="hidden" animate="visible" exit="exit">
             <DetailItem label="Recipient UPI ID" value={upiId} />
-            <DetailItem label="Sender UPI ID" value={senderUPI} />
+            <DetailItem label="Sender UPI ID" value={"varsha@ybl"} />
             <DetailItem label="Amount" value={`₹${amount}`} />
             <DetailItem label="Remarks" value={remarks} />
             <motion.div className="flex justify-center mt-8" variants={itemVariants}>
