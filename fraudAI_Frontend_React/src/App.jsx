@@ -4,6 +4,9 @@ import Homepage from './components/logic/homepage';
 import Dashboard from './components/logic/Dashboard';
 import PredictForm from '../PredictForm'
 import Recent from './components/logic/Recent'
+import Beneficiaries from './components/logic/Beneficiaries';
+import HelpSupport from './components/logic/HelpSupport';
+import Statement from './components/logic/Statement';
 const RouteTitleUpdater = () => {
   const location = useLocation();
 
@@ -35,10 +38,10 @@ const App = () => {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/send-money" element={<Homepage />} />
         <Route path="/transactions" element={<Recent />} />
-        <Route path="/statements" element={<Homepage />} />
-        <Route path="/beneficiaries" element={<Homepage />} />
+        <Route path="/statements" element={<Statement />} />
+        <Route path="/beneficiaries" element={<Beneficiaries/>} />
         <Route path="/settings" element={<PredictForm />} />
-        <Route path="/help-support" element={<Homepage />} />
+        <Route path="/help-support" element={<HelpSupport />} />
       </Routes>
     </Router>
     
