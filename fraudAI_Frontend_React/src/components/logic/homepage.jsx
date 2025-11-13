@@ -5355,20 +5355,19 @@ import {
           </motion.div>
         )}
       </AnimatePresence>
-
       <AlertDialog open={isAlertOpen} onOpenChange={setIsAlertOpen}>
         <AlertDialogContent>
           <AlertDialogHeader>
             <AlertDialogTitle>Why is this UPI ID flagged as fraudulent?</AlertDialogTitle>
             <AlertDialogDescription>
-              `This UPI ID has been associated with multiple reported scams and fraudulent activitiess strongly recommended not to proceed with any transactions using this ID.``
+              This UPI ID has been associated with multiple reported scams and fraudulent activitiess strongly recommended not to proceed with any transactions using this ID.
             </AlertDialogDescription>
           </AlertDialogHeader>
           <AlertDialogFooter>
             <AlertDialogAction>Understood</AlertDialogAction>
           </AlertDialogFooter>
         </AlertDialogContent>
-      </AlertDialog>
+      </AlertDialog>   
                         </motion.div>
     
                         <motion.div

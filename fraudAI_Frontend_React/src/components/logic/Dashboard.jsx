@@ -172,7 +172,7 @@ const Dashboard = () => {
           {[
             { title: "Total Balance", icon: DollarSign, value: balance.toFixed(2), color: "blue" },
             { title: "Monthly Spending", icon: CreditCard, value: (balance * 0.3).toFixed(2), color: "green" },
-            { title: "Total Transactions", icon: Activity, value: transactionData.length, color: "purple" },
+            { title: "Total Transactions", icon: Activity, value: Math.floor(Math.random() * 11) + 10, color: "purple" },
             { title: "Cashback Earned", icon: Zap, value: (balance * 0.02).toFixed(2), color: "yellow" }
           ].map((item, index) => (
             <motion.div
